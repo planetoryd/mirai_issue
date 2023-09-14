@@ -7,18 +7,18 @@ pub fn working() {
     verify!(false);
 }
 
-struct Empty;
+pub struct Empty;
 
 impl Empty {
-    fn without_generics() {
+    pub fn without_generics() {
         verify!(false)
     }
 }
 
-struct Gen<T>(T);
+pub struct Gen<T>(T);
 
 impl<T> Gen<T> {
-    fn with_generics() {
+    pub fn with_generics() {
         verify!(false)
     }
 }
