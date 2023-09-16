@@ -5,5 +5,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+async-std = { version = "1.12.0", features = ["attributes"] }
 contracts = { version = "0.6.3", features = ["mirai_assertions"] }
 mirai-annotations = "1.12.0"
+
+[dev-dependencies]
+amplify_derive = "3.0.1"
